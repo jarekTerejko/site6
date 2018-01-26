@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-column-gap: 10px;
+}
+
+/*-----manu-----*/
+
+.logo {
+    color: #0149a1;
+}
+
+.logo a {
+    font-size: 36px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.logo span {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nav {
+    grid-column: 2/14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    padding-right: 50px;
+}
+
+.nav ul li:last-child {
+    padding-right: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #5d6981;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+li a:hover {
+    color: #0149a1;
+}
+
+/*-----header-----*/
+
+.hero {
+    border-top: 1px solid #e4e6ea;
+    grid-column: 1/15;
+    background: url(../images/Vector%20Smart%20Object%20copy.png) 0 580px, linear-gradient(0deg, #edeff1 1%, #ffffff 23%, #e2e4e8 31%, #ffffff 100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: #0149a1;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    color: #5d6981;
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 108px;
+}
+
+.main-red-btn {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 240px;
+    height: 60px;
+    padding: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #ff2d55;
+    transition: .3s;
+}
+
+.main-red-btn:hover {
+    border: 1px solid #ff2d55;
+    background-color: transparent;
+    color: #ff2d55;
+    cursor: pointer;
+}
+
+.hero .mac {
+    padding-top: 118px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-column-gap: 10px;
+}
+
+.box {
+    text-align: center;
+    transition: .3s;
+    margin: 0 0 134px 0;
+    padding: 20px 0;
+}
+
+.box:hover {
+    box-shadow: 5px 5px 8px #5d6981;
+    cursor: pointer;
+}
+
+.box img {
+    max-width: 100%;
+}
+
+.box h2 {
+    color: #5d6981;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 26px;
+}
+
+.box1 img {
+    padding-bottom: 54px;
+}
+
+.box2 img {
+    padding-bottom: 47px;
+}
+
+.box3 img {
+    padding-bottom: 48px;
+}
+
+.box4 img {
+    padding-bottom: 59px;
+}
+
+.box p {
+    color: #7c8ca0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.box1 {
+    grid-column: 2/5;
+}
+
+.box2 {
+    grid-column: 5/8;
+}
+
+.box3 {
+    grid-column: 8/11;
+}
+
+.box4 {
+    grid-column: 11/14;
+}
+
+/*-----section creativity-----*/
+
+.creativity {
+    grid-column: 1/15;
+    text-align: center;
+    padding: 355px 0 195px 0;
+    background-image: url(../images/Subscription_Monthly_Price.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-blue-btn {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 240px;
+    height: 60px;
+    padding: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #0149a1;
+    transition: .3s;
+}
+
+.main-blue-btn:hover {
+    border: 1px solid #283593;
+    background-color: #fff;
+    cursor: pointer;
+    color: #283593;
+}
+
+/*-----section how we work-----*/
+
+.workflow {
+    background-color: #0149a1;
+    grid-column: 1/15;
+    grid-column-gap: 10px;
+    color: #fff;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.workflow-content {
+    padding-top: 126px;
+    padding-bottom: 114px;
+    text-align: center;
+}
+
+.workflow-content h1 {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.workflow-content p {
+    color: #5483bb;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.schema-columns {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 90px;
+}
+
+.left {
+    grid-column: 2/8;
+    align-self: center;
+}
+
+.right {
+    grid-column: 8/14;
+}
+
+.left img {
+    max-width: 100%;
+}
+
+.right p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.right p:last-child {
+    padding-bottom: 0;
+}
+
+.main-white-btn {
+    border: none;
+    text-decoration: none;
+    color: #0149a1;
+    font-size: 18px;
+    font-weight: 700;
+    width: 240px;
+    height: 60px;
+    padding: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.main-white-btn:hover {
+    border: 1px solid #fff;
+    background-color: #0149a1;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*-----section slider-----*/
+
+.slider {
+    grid-column: 1/15;
+    text-align: center;
+}
+
+.slider {
+    padding: 100px 0;
+}
+
+.slider ul li p {
+    color: #7c8ca0;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 30px;
+    padding: 50px 0;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.slider img {
+    max-width: 100%;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+}
+
+/*-----section team-----*/
+
+.team {
+    grid-column: 1/15;
+    background-color: #eeeff1;
+    min-height: 100px;
+    text-align: center;
+    padding: 138px 0 126px 0;
+}
+
+.team h1 {
+    color: #0149a1;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.team p {
+    color: #7c8ca0;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.workers {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-column-gap: 10px;
+    padding: 100px 0 88px 0;
+}
+
+.worker img {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+}
+
+.worker h3 {
+    color: #5d6981;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 47px 0 26px 0;
+}
+
+.worker p {
+    color: #7c8ca0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.worker1 {
+    grid-column: 2/5;
+}
+
+.worker2 {
+    grid-column: 5/8;
+}
+
+.worker3 {
+    grid-column: 8/11;
+}
+
+.worker4 {
+    grid-column: 11/14;
+}
+
+.team .main-red-btn:hover {
+    border: 1px solid #ff2d55;
+    background-color: #eeeff1;
+    color: #ff2d55;
+    cursor: pointer;
+}
+
+/*-----section google maps-----*/
+
+.google-maps {
+    grid-column: 1/15;
+    height: 600px;
+    width: 100%;
+}
+
+/*-----footer-----*/
+
+footer {
+    grid-column: 1/15;
+    background-color: #0149a1;
+    min-height: 100px;
+    padding: 90px 0;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-column-gap: 10px;
+}
+
+.footer-cols ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 36px;
+}
+
+.footer-cols ul a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-cols ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-col-1 {
+    grid-column: 2/5;
+}
+
+.footer-col-2 {
+    grid-column: 5/8;
+}
+
+.footer-col-3 {
+    grid-column: 8/11;
+}
+
+.footer-col-4 {
+    grid-column: 11/14;
+}
+
+/*-----media queries-----*/
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (max-width: 1199px) {
+    /*-----manu-----*/
+    .nav {
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav ul {
+        display: block;
+    }
+    .nav ul li {
+        padding-right: 0;
+        padding: 8px 0;
+    }
+
+    .nav ul li:first-child {
+        padding-top: 20px;
+    }
+
+    .nav ul li:last-child {
+        padding-bottom: 0;
+    }
+
+    li a {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*-----header-----*/
+    .box1 {
+        grid-column: 2/8;
+    }
+
+    .box2 {
+        grid-column: 8/14;
+    }
+
+    .box3 {
+        grid-column: 2/8;
+    }
+
+    .box4 {
+        grid-column: 8/14;
+    }
+
+    /*-----section how we work-----*/
+    .left {
+        grid-column: 2/14;
+        padding-bottom: 20px;
+    }
+
+    .right {
+        grid-column: 2/14;
+    }
+    .right p {
+        text-align: center;
+    }
+
+    /*-----section team-----*/
+    .worker {
+        padding: 20px 0
+    }
+
+    .worker1 {
+        grid-column: 2/8;
+    }
+
+    .worker2 {
+        grid-column: 8/14;
+    }
+
+    .worker3 {
+        grid-column: 2/8;
+    }
+
+    .worker4 {
+        grid-column: 8/14;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /*-----header-----*/
+    .hero-content h1 {
+        font-size: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero-content p {
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .box1 {
+        grid-column: 2/14;
+    }
+
+    .box2 {
+        grid-column: 2/14;
+    }
+
+    .box3 {
+        grid-column: 2/14;
+    }
+
+    .box4 {
+        grid-column: 2/14;
+    }
+
+    /*-----section how we work-----*/
+    .workflow-content h1 {
+        font-size: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .workflow-content p {
+        font-size: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .left {
+        grid-column: 2/14;
+        padding-bottom: 20px;
+    }
+
+    .right {
+        grid-column: 2/14;
+    }
+    .right p {
+        text-align: center;
+    }
+
+    .team h1 {
+        font-size: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    /*-----section team-----*/
+    .team p {
+        font-size: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .worker p {
+        font-size: 18px;
+    }
+
+    .worker {
+        padding: 20px 0
+    }
+
+    .worker1 {
+        grid-column: 2/14;
+    }
+
+    .worker2 {
+        grid-column: 2/14;
+    }
+
+    .worker3 {
+        grid-column: 2/14;
+    }
+
+    .worker4 {
+        grid-column: 2/14;
+    }
+
+    /*-----footer-----*/
+    .footer-col-1 {
+        grid-column: 2/14;
+    }
+
+    .footer-col-2 {
+        grid-column: 2/14;
+    }
+
+    .footer-col-3 {
+        grid-column: 2/14;
+    }
+
+    .footer-col-4 {
+        grid-column: 2/14;
+    }
+
+    .footer-cols ul {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+}
